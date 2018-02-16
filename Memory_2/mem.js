@@ -8,16 +8,35 @@ angular.module('memo', []).controller('leMemo',["$scope", "$http", function ($sc
 
 
   $http.get('./taric.json').then(function(taricJson) {
-        $scope.mesTarics = taricJson.data.data;
+        let temp = [];
+        for (var elem in taricJson.data.data) {
+          console.log(elem);
+          console.log(taricJson.data.data[elem]);
+          temp.push(taricJson.data.data[elem]);
+          temp.push(taricJson.data.data[elem]);
+        }
+        temp = shuffle(temp);
+        temp = shuffle(temp);
+
+
+
+        console.log(temp);
+        $scope.mesTarics = toObject(temp);
+
     });
 
-    function getRandomTaric(){
-      let TaricRandom = $scope.mesTarics[Object.keys($scope.mesTarics)[getRandomNumber()]];
-      
-    };
-
-    function getRandomNumber(){
-        return Math.floor((Math.random()*($scope.longueurMesTarics-1))+1);
+    function toObject(arr) {
+      var rv = {};
+      for (var i = 0; i < arr.length; ++i)
+        rv[i] = arr[i];
+      return rv;
     }
 
+    function shuffle(a) {
+    for (let i = a.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+}
 }]);
