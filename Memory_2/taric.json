@@ -1,0 +1,44 @@
+{
+    "data": {
+        "Taric1": {
+            "id": 1,
+            "image":"https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taric_0.jpg" ,
+
+            "key": "T1",
+            "name": "Taric le male alpha",
+            "title": "le"
+        },
+        "Taric2": {
+            "id": 2,
+            "image":"https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taric_1.jpg" ,
+
+            "key": "T2",
+            "name": "Taric dans une mine",
+            "title": "plus"
+        },
+        "Taric3": {
+            "id": 3,
+            "image":"https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taric_2.jpg" ,
+
+            "key": "T3",
+            "name": "Taric le plus beau",
+            "title": "beau"
+        },
+        "Taric4": {
+            "id": 4,
+            "image":"https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taric_3.jpg" ,
+
+            "key": "T4",
+            "name": "Taric MLG",
+            "title": "c'est"
+        },
+        "Taric5": {
+            "id": 5,
+            "image":"https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Taric_4.jpg" ,
+
+            "key": "T5",
+            "name": "Taric à Malibu",
+            "title": "taric"
+        }
+    }
+}
