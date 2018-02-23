@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.thumbnail {
+  color: white;
+  width: 30%;
+  display: inline-block;
+  background-image: url(./woodv.jpg);
+  background-size: contain;
+  margin:  1%;
+  
+}
+.thumbnail img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.thumbnail .textMem {
+  opacity: 0;
+  color: white;
+}
+.thumbnail:hover img {
+  opacity: 1;
+}
+.thumbnail:hover .textMem {
+  opacity: 1;
+  background-color: black;
+}
